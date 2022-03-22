@@ -10,19 +10,17 @@ version = property("mod_version")!!
 
 repositories {
     // Add repositories to retrieve artifacts from in here.
-    // You should only use this when depending on other mods because
-    // Loom adds the essential maven repositories to downl oad Minecraft and libraries from automatically.
+    // Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
     // See https://docs.gradle.org/current/userguide/declaring_repositories.html
-    // for more information about repositories.
 }
 
 dependencies {
-    minecraft("com.mojang:minecraft:${property("minecraft_version")}")
-    mappings("net.fabricmc:yarn:${property("yarn_mappings")}:v2")
-    modImplementation("net.fabricmc:fabric-loader:${property("loader_version")}")
+    minecraft("com.mojang:minecraft:1.18.2")
+    mappings("net.fabricmc:yarn:1.18.2+build.2:v2")
+    modImplementation("net.fabricmc:fabric-loader:0.13.3")
 
-    modImplementation("net.fabricmc:fabric-language-kotlin:${property("fabric_kotlin_version")}")
-    modImplementation("net.fabricmc.fabric-api:fabric-api:${property("fabric_api_version")}")
+    modImplementation("net.fabricmc:fabric-language-kotlin:1.7.1+kotlin.1.6.10")
+    modImplementation("net.fabricmc.fabric-api:fabric-api:0.48.0+1.18.2")
 }
 
 tasks {
@@ -35,7 +33,7 @@ tasks {
     }
 
     jar {
-        from("LICENSE")
+        from("LICENSE.md")
     }
 
     publishing {
@@ -52,8 +50,6 @@ tasks {
 
         // select the repositories you want to publish to
         repositories {
-            // uncomment to publish to the local maven
-            // mavenLocal()
         }
     }
 
@@ -66,10 +62,5 @@ tasks {
 java {
     // Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
     // if it is present.
-    // If you remove this line, sources will not be generated.
     withSourcesJar()
 }
-
-
-
-// configure the maven publication
