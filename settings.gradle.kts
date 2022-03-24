@@ -1,7 +1,7 @@
 rootProject.name = "fabric-example-mod-kotlin-with-kotlin-dsl"
 pluginManagement {
     repositories {
-        jcenter()
+        mavenCentral()
         maven("https://maven.fabricmc.net/") {
             name = "Fabric"
         }
