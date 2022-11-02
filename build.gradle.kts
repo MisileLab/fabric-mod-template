@@ -15,12 +15,12 @@ repositories {
 }
 
 dependencies {
-    minecraft("com.mojang:minecraft:1.18.2")
-    mappings("net.fabricmc:yarn:1.18.2+build.2:v2")
-    modImplementation("net.fabricmc:fabric-loader:0.13.3")
+    minecraft("com.mojang:minecraft:1.19.2")
+    mappings("net.fabricmc:yarn:1.19.2+build.28:v2")
+    modImplementation("net.fabricmc:fabric-loader:0.14.10")
 
-    modImplementation("net.fabricmc:fabric-language-kotlin:1.7.1+kotlin.1.6.10")
-    modImplementation("net.fabricmc.fabric-api:fabric-api:0.48.0+1.18.2")
+    modImplementation("net.fabricmc:fabric-language-kotlin:1.8.5+kotlin.1.7.20")
+    modImplementation("net.fabricmc.fabric-api:fabric-api:0.64.0+1.19.2")
 }
 
 tasks {
