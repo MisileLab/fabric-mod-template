@@ -20,7 +20,7 @@ dependencies {
     modImplementation("net.fabricmc:fabric-loader:0.14.12")
 
     modImplementation("net.fabricmc:fabric-language-kotlin:1.9.0+kotlin.1.8.0")
-    modImplementation("net.fabricmc.fabric-api:fabric-api:0.70.0+1.19.3")
+    modImplementation("net.fabricmc.fabric-api:fabric-api:0.71.0+1.19.3")
 }
 
 tasks {
