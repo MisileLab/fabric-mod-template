@@ -19,7 +19,7 @@ dependencies {
     mappings("net.fabricmc:yarn:1.20.1+build.10:v2")
     modImplementation("net.fabricmc:fabric-loader:0.14.22")
 
-    modImplementation("net.fabricmc:fabric-language-kotlin:1.10.0+kotlin.1.9.10")
+    modImplementation("net.fabricmc:fabric-language-kotlin:1.10.10+kotlin.1.9.10")
     modImplementation("net.fabricmc.fabric-api:fabric-api:0.88.1+1.20.1")
 }
 
