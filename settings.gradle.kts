@@ -9,7 +9,7 @@ pluginManagement {
     }
 
     plugins {
-        id("fabric-loom") version "1.8.6"
+        id("fabric-loom") version "1.8.7"
         id("org.jetbrains.kotlin.jvm") version "2.0.20"
     }
 
